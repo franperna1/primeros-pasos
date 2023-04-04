@@ -1,0 +1,49 @@
+// sacar cualquier numero a cualquier lugar
+
+
+fun main() {
+    
+    
+    var lista = arrayOf(1,2,3,4,5,6) 
+    				
+    var tamaño = lista.size
+    
+    var lista2 = IntArray(tamaño-1)
+    
+    var num = 5
+    
+    var pos = -1
+    
+    if(num<=lista.size){
+        
+     	for (i in lista.indices){
+          
+          if (lista[i]==num){
+          
+             pos=i
+              
+          }
+          if (pos==-1){
+              
+              lista2[i]=lista[i]
+           
+   	      }else if(i> pos){
+              
+              lista2[i-1]=lista[i]
+          }     
+          
+              
+   	      
+    	}
+    	for (i in lista2.indices){
+        
+        	println(lista2[i])      
+        
+    	  	
+     	} 
+   	}else{
+         
+         println("ocurrio un error")
+	}
+    
+}
