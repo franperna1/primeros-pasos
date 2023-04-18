@@ -1,0 +1,47 @@
+//altura x largo x ancho / 1000
+
+fun main() {
+    
+    var acuario = acuario1()
+    
+    acuario.litrosacuario()
+    
+    acuario.altura =60
+    
+    acuario.litrosacuario()
+    
+    acuario.imprimirdatos()
+    
+    acuario.pescado()
+
+    acuario.pescado()
+
+}
+
+class acuario1(){
+    
+    var altura = 40
+    
+    var largo = 50
+    
+    var ancho = 62
+    
+    private var litros = altura*largo*ancho/1000 // private es un modificador de acceso, solo la clase lo puede usar//
+    
+    //metodos
+    fun litrosacuario(){
+    
+        println("la cantidad de litros que entran en el acuario son ${litros} L")
+    }
+    
+    fun imprimirdatos(){
+        
+        println("el acuario tiene ${altura} de altura, ${largo} de largo, y ${ancho} de ancho")
+    }
+    
+    fun pescado(){
+
+        print("la cantidad de pescados que entran son ${litros/5}")
+    }
+    
+}
